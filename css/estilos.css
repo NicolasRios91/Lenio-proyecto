@@ -17,6 +17,7 @@
         }
         
         #banner {
+
             height: 110px;
         }
         
@@ -87,13 +88,9 @@
             padding: 5px 5px 5px 5px;
             box-sizing: border-box;
         }
-        
-        #image-profile {
-            margin: auto;
-            text-align: center;
-        }
-        
+
         table {
+            margin: auto;
             width: 80%;
             color: black;
             margin: auto;
@@ -143,16 +140,19 @@
             .container,
             footer,
             .article-left,
-            .right {
+            .article-right {
                 width: 100%;
                 font-size: 0.85rem;
             }
-        }
-        
-        @media only screen and (max-width: 800px) {
             #ring,
-            #ring-2 {
+            #ring-2
+            {
                 display: none;
+            }
+        }
+        @media only screen and (max-width: 520px){
+            #banner{
+                width: 340px;
             }
         }
         
@@ -161,17 +161,17 @@
             height: 80%;
             margin: 25px 0px 15px 30px;
         }
+
         
+        .image-profile {
+            text-align: center;
+        }
+                
         #profile-image {
             margin: auto;
             border-radius: 10px;
             width: 90%;
         }
-        
-        .image-profile {
-            text-align: center;
-        }
-        
         .image-profile p {
             margin: auto;
             width: 80%;
