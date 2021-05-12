@@ -1,0 +1,218 @@
+body{
+background-image: url(../img/rojo.jpg);
+min-width: 460px;
+}
+
+header{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 110px;
+    margin-bottom: 10px;
+    background: rgb(0, 0, 0);
+
+    text-align: center;
+    box-sizing: border-box;
+    
+    }
+#banner{
+    height: 110px;
+}
+
+@keyframes ring {
+    0%   {opacity: 0};    
+    50%   {opacity: 0.5};
+    1000%  {opacity: 1};
+} 
+#ring{
+    animation-name: ring;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+#ring-2{
+    animation: ring 4s linear 0s infinite alternate;
+}
+.container{
+    
+    width: 60%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    
+    font-size: 1.4rem;
+    margin: auto;
+    padding: 15px 15px 25px 15px;
+    /* padding-bottom: 25px; */
+
+    color: white;
+    background: #362810;
+    border-right: 7px solid black;
+    border-left: 7px solid black;
+    box-sizing: border-box;
+
+}
+p{
+    color: white;
+    font-family: -webkit-pictograph;
+}
+footer{
+    border-right: 10px solid black;
+    border-left: 10px solid black;
+    padding: 10px 12px 0px 12px;
+    margin: auto;
+    height: 150px;
+    width: 60%;
+    box-sizing: border-box;
+    background-color:black;
+}
+@media only screen and (max-width: 1400px){
+    .container,footer {
+        width: 70%;
+        font-size: 1.2rem;
+        }
+    }
+    @media only screen and (max-width: 1200px){
+        .container,footer {
+            width: 80%;
+            font-size: 1.05rem;
+            }
+        }
+        @media only screen and (max-width: 1000px){
+            .container,footer{
+                width: 90%;
+                font-size: .95rem;
+                }
+            }
+            @media only screen and (max-width: 800px){
+                .container,footer{
+                    width: 100%;
+                    font-size: .85rem;
+                    }
+                }
+
+
+
+
+    @media only screen and (max-width: 800px){
+        #ring,#ring-2 {
+            display: none;
+            }
+        }
+
+article{
+    vertical-align: top; /*asi no se mueve el texto*/
+    width: 50%;
+    height: 100%;
+}
+
+.right{
+    vertical-align: top; /*asi no se mueve el texto*/
+    width: 50%;
+    height: 100%;
+}
+
+#strange
+{
+    width: 70%;
+    height: 80%;
+    margin: 25px 0px 15px 30px;
+}
+
+.item-title{
+    width: 75%;
+    margin: auto;
+    padding: 7px 7px 7px 7px;
+    display: flex;
+    border:1px solid black;
+    background-color: #e8e095;
+    color: black;
+
+}
+.h-item{
+    margin-top: 0;
+    width: 35%;
+    text-align: left;
+}
+.item-data{
+    width: 65%;
+    padding-left: 40px;
+}
+
+.right-up{
+    /* background-color:rgb(221, 221, 206); */
+    width: 100%;
+    height: 50%;
+    text-align: center;
+    font-style:oblique;
+}
+
+.right-down{
+    margin: auto;
+    display: block;
+    justify-content: center;
+    width: 100%;
+    height: 50%; 
+}
+
+#doctor{
+    /* margin-top: 20px; */
+    border-radius: 50px;
+    width: 80%;
+    /* height: 75%;    */
+    /* filter: grayscale(100%); */
+    box-shadow: 3px 3px 3px rgb(192, 188, 185);
+}
+#gema{
+    padding-left: 25px;
+    /* animation: myfirst 2s linear 0s infinite alternate; */
+    /* margin-top: 10px; */
+    width: 75px;
+    height: 75px;
+}
+@media only screen and (max-width: 800px){
+    #gema {
+        padding:unset;
+        }
+    }
+a{
+    color: blue;
+    text-decoration: none;
+}
+
+.why{
+    width: 75%;
+    margin: auto;
+}
+
+
+
+/* #doctor:hover{
+    filter: none;
+} */
+/* .fa {
+    padding: 10px;
+    font-size: 1px;
+    width: 5px;
+    text-align: center;
+    text-decoration: none;
+    /* margin: 5px 2px; 
+    border-radius: 50%;
+  }
+.fa-linkedin {
+    background: #3B5998;
+    color: white;
+  } */
+#link
+{
+    width: 25px;
+    height: 25px;
+}
+#link:hover{
+    opacity: .75;
+}
